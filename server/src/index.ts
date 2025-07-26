@@ -104,7 +104,7 @@ app.put('/api/tasks/:id/subtasks/:subId/complete', (req, res) => {
   const task = tasks.find(t => t.id === +req.params.id);
   if (!task) return res.status(404).send('Task not found');
 
-  const subtask = task.subtasks.find(s => s.id === +req.params.subId);
+  const subtask = task.subtasks.find((s: Subtask) => s.id === +req.params.subId);
   if (!subtask) return res.status(404).send('Subtask not found');
 
   subtask.completed = true;
@@ -117,7 +117,7 @@ app.delete('/api/tasks/:id/subtasks/:subId', (req, res) => {
   const task = tasks.find(t => t.id === +req.params.id);
   if (!task) return res.status(404).send('Task not found');
 
-  task.subtasks = task.subtasks.filter(s => s.id !== +req.params.subId);
+  task.subtasks = task.subtasks.filter((s: Subtask) => s.id !== +req.params.subId);
   writeTasks(tasks);
   res.sendStatus(204);
 });
