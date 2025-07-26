@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Prepare project proposal",
+    "completed": false,
+    "subtasks": [
+      {
+        "id": 2,
+        "title": "Draft proposal document",
+        "completed": true
+      },
+      {
+        "id": 3,
+        "title": "Document Changes",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Develop backend API",
+    "completed": false,
+    "subtasks": [
+      {
+        "id": 1,
+        "title": "Design database schema",
+        "completed": true
+      },
+      {
+        "id": 2,
+        "title": "Created documentation",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Frontend UI design",
+    "completed": true,
+    "subtasks": []
+  }
+]
