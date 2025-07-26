@@ -4,7 +4,6 @@ import {
   getTasks,
   addTask,
   updateTask,
-  completeTask,
   deleteTask,
   addSubtask,
   updateSubtask,
