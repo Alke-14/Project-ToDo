@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { Task, Subtask } from '../../server/src/types';
 
-const API_URL = 'http://localhost:3001/api/tasks';
+const API_URL = 'https://project-todo-lbqi.onrender.com/api/tasks';
 
 export const getTasks = async (): Promise<Task[]> => {
   const response = await axios.get<Task[]>(API_URL);
